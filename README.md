@@ -13,30 +13,7 @@ Java 11 o superior
 Maven
 PostgreSQL
 Conexión a Internet para acceder a la API de Gutendex
-Configuración
-Clona este repositorio:
 
-bash
-Copiar código
-git clone https://github.com/tu_usuario/cliente-api-gutendex.git
-cd cliente-api-gutendex
-Configura la base de datos PostgreSQL en src/main/resources/application.properties:
-
-properties
-Copiar código
-spring.datasource.url=jdbc:postgresql://localhost:5432/gutendex
-spring.datasource.username=tu_usuario
-spring.datasource.password=tu_contraseña
-spring.jpa.hibernate.ddl-auto=update
-Asegúrate de tener PostgreSQL en funcionamiento y crea la base de datos gutendex.
-
-Construye y ejecuta la aplicación:
-
-bash
-Copiar código
-mvn clean install
-mvn spring-boot:run
-Uso
 Una vez que la aplicación esté en funcionamiento, puedes interactuar con ella desde la consola:
 
 Buscar libro por título: Ingresa el título de un libro y la aplicación buscará y almacenará el primer resultado encontrado.
